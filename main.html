@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Minha TV Digital :)</title>
+
+	<style type="text/css">
+		img{
+			border: solid 2px black;
+			padding: 10px;
+			box-shadow: 5px 5px 3px black;
+		}
+
+		#controle{
+			margin: 10%;
+		}
+
+		#controle p button{
+			background-color: black;
+			color: white;
+			border-color: black;
+			font-family:'Arial';
+			border-radius: 3px;
+			padding: 20px;
+			width: 100%;
+		}
+		h1{
+			font-family:'Arial';
+			text-transform: uppercase;
+			text-align: center;
+			box-shadow: 1px 1px 1px black;
+			
+		}
+	</style>
+</head>
+<body>
+
+	<h1 align="center">Bem vindo a nossa Tv digital!!!</h1>
+	<div align="center">
+		<img id="tvimg" src="imagens/tvdesligada.png">
+	</div>
+	<div id="controle" align="center">
+		<p><button onclick="ligar()">Ligar</button></p>
+		<p><button onclick="desligar()">Desligar</button></p>
+	</div>
+
+	<script type="text/javascript">
+		var tv = document.getElementById('tvimg');
+		function ligar(){
+			tv.src = 'imagens/tvligada.png';
+		}
+
+		function desligar(){
+			tv.src = 'imagens/tvdesligada.png';
+		}
+	</script>
+</body>
+</html>
